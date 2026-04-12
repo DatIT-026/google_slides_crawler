@@ -1,6 +1,6 @@
 # Google Slide Crawler
 
-A lightweight tool designed to extract high-quality slide images and speaker notes from Google Slides, automatically compiling them into a structured PDF.
+A lightweight tool designed to extract high-quality slide images and notes from Google Slides, automatically compiling them into a structured PDF.
 
 ## How to use?
 
