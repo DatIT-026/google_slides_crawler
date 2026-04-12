@@ -44,8 +44,7 @@ def main():
                 print(f"Downloaded: {file_name}")
             else:
                 print(f"Failed: {file_name} | Status: {response.status_code}")
-                # If 403 occurs here, the HMAC in the URLs in urls.txt might have expired.
-                # You need to refresh the page and re-run Step 1.
+                # if 403 occurs here, the HMAC in the URLs in urls.txt might have expired.
         except Exception as e:
             print(f"Error at {file_name}: {e}")
 

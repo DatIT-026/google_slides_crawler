@@ -100,6 +100,6 @@ python helper.py
 _Once finished, your compiled PDF will appear in the project directory._
 
 ## Note & Disclaimer
-For educational and research purposes only. Use this tool responsibly. The developer is not responsible for any misuse or illegal activities conducted with this script.
+For educational and research purposes only. Use this tool responsibly. The developer is not responsible for any misuse or illegal activities conducted with this tool.
 
 This project is licensed under the [MIT License](LICENSE).

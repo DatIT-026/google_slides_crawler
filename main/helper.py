@@ -71,4 +71,4 @@ def create_study_pdf(text_file, img_folder, output_pdf):
     print(f"Success! PDF saved as: {output_pdf}")
 
 if __name__ == "__main__":
-    create_study_pdf("Answers.txt", "img", "SWE202c.pdf")
+    create_study_pdf("Answers.txt", "img", "result.pdf")
