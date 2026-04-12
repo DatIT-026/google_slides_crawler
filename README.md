@@ -17,7 +17,7 @@ https://github.com/DatIT-026/google_slide_crawler.git
 cd google_slide_crawler
 ```
 
-**Step 1**: Prepare the Google Slide URL
+### Step 1: Prepare the Google Slide URL
 
 Open your Google Slide and modify the URL ending. Change the suffix (usually /edit...) to `/htmlpresent`.
 
@@ -25,11 +25,11 @@ For example:
 - **Original**: `https://docs.google.com/presentation/d/1abc.../edit`
 - **Modified**: `https://docs.google.com/presentation/d/1abc.../htmlpresent`
 
-**Step 2**: Extract Data via Browser Console
+### Step 2: Extract Data via Browser Console
 
 Open the Modified URL in your browser, press F12 (or Ctrl+Shift+I) to open `Dev Tools`, and go to the `Console` tab.
 
-**A. Get Slide URLs**
+#### A. Get Slide URLs
 
 Paste the following code to extract image links. Copy the resulting list and save it into a file named `urls.txt` in the project folder.
 
@@ -42,7 +42,7 @@ const urls = Array.from(slides).map(s => {
 console.log(urls.join('\n'));
 ```
 
-**A. Get Answers**
+#### B. Get Answers
 
 Paste this code to extract notes. This will automatically trigger a download for Answers.txt. Move this file into the project folder.
 
@@ -71,7 +71,7 @@ Paste this code to extract notes. This will automatically trigger a download for
 })();
 ```
 
-**Step 3**: Authenticate (Session Cookies)
+### Step 3: Authenticate (Session Cookies)
 
 To allow the script to download the images, you need your session cookie:
 
@@ -81,9 +81,9 @@ To allow the script to download the images, you need your session cookie:
 - Under `Headers` > `Request Headers`, find the `Cookie:` field.
 - Copy the entire string and paste it into a file named `cookie.txt`.
 
-**Step 4**: Run the Crawler
+### Step 4: Run the Crawler
 
-**A. Download Images**
+#### A. Download Images
 
 Execute the Python scripts in order:
 
@@ -92,7 +92,7 @@ python crawl.py
 ```
 _Wait for the download process to complete._
 
-**B. Generate PDF**
+#### B. Generate PDF
 
 ```python
 python helper.py
