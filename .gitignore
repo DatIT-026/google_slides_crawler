@@ -1,0 +1,17 @@
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.sublime-project
+*.sublime-workspace
+*.zip
+*.crx
+*.pem
+cookie.txt
+urls.txt
+Answers.txt
+__pycache__/
+*.pyc
+node_modules/
+package-lock.json
